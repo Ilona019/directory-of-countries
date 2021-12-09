@@ -1,9 +1,21 @@
+<script>
+export default {
+  name: 'app',
+  watch: {
+    '$route': {
+      handler: function(to) {
+        document.title = to.meta.title || '';
+      },
+      immediate: true
+    }
+  }
+}
+</script>
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home page</router-link>
   </div>
-  <router-view/>
+  <router-view :key="$route.fullPath"/>
 </template>
 
 <style>
@@ -13,10 +25,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background: #d4e4d2;
+  margin: 0;
+  padding: 0;
 }
 
 #nav {
-  padding: 30px;
+  padding: 5px;
 }
 
 #nav a {
