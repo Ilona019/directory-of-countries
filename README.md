@@ -10,10 +10,9 @@
 
 Данные о станах получаю с помощью API
 [https://restcountries.com/#api-endpoints-v3-all](https://restcountries.com/#api-endpoints-v3-all "REST COUNTRIES")
-## Выполните следующие шаги в консоли для запуска проекта из папки с проектом
+## Выполните следующие шаги в консоли для запуска проекта из папки с проектом directory-of-countries
 Для сборки понадобится пакетный менеджер npm, устанавливается вместе с NodeJs ([https://nodejs.org/ru/download/](https://nodejs.org/ru/download/ "NodeJS")).
 После выполнения **npm run serve** приложение развернётся на локальном хосте (http://localhost:8080/)
-directory-of-countries
 ## Project setup
 ```
 npm install
